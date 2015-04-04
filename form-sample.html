@@ -1,0 +1,16 @@
+<body>
+{{> myForm }}
+</body>
+
+<template name="myForm" id="myForm">
+    <form action="#">
+        <input type="text" name="name" placeholder="Name"/><br/>
+        <input type="text" name="email" placeholder="Email"/><br/>
+        <input type="text" name="foo" placeholder="Foo"/><br/>
+        <input type="submit" value="Save"/>
+    </form>
+
+    {{#each tests}}
+        {{name}} - {{email}} - {{foo}}<br/>
+    {{/each}}
+</template>
